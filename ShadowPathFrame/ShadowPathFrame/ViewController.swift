@@ -23,6 +23,10 @@ final class ViewController: UIViewController {
         let view = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
         view.backgroundColor = .blue
         
+        view.layer.shadowOffset = CGSize(width: 10, height: 10)
+        view.layer.shadowRadius = 5
+        view.layer.shadowOpacity = 0.3
+        
         return view
     }
 
