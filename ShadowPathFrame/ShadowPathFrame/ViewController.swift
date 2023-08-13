@@ -27,6 +27,9 @@ final class ViewController: UIViewController {
         view.layer.shadowRadius = 5
         view.layer.shadowOpacity = 0.3
         
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = UIScreen.main.scale
+        
         return view
     }
 
