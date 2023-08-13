@@ -27,6 +27,8 @@ final class ViewController: UIViewController {
         view.layer.shadowRadius = 5
         view.layer.shadowOpacity = 0.3
         
+        view.layer.shadowPath = CGPath(rect: view.bounds, transform: nil)
+        
         view.layer.shouldRasterize = true
         view.layer.rasterizationScale = UIScreen.main.scale
         
